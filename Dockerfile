@@ -19,7 +19,7 @@ ENV GO111MODULE=on \
 	    RUN go mod download
 
 	    # Copy the code into the container
-	    COPY ./src .
+	    COPY ./src/. .
 
 		COPY ./src/love.gif .
 
