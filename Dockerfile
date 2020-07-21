@@ -14,14 +14,14 @@ ENV GO111MODULE=on \
 	    WORKDIR /build
 
 	    # Copy and download dependency using go mod
-	    COPY ./src/go.mod .
-	    COPY ./src/go.sum .
+	    COPY /src/go.mod .
+	    COPY /src/go.sum .
 	    RUN go mod download
 
 	    # Copy the code into the container
 	    COPY src .
 
-		COPY ./src/love.gif .
+		COPY /src/love.gif .
 
 	    # Build the application
 	    RUN go build -o main .
