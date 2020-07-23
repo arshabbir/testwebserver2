@@ -91,7 +91,7 @@ func (ic *itemcontroller) Start() {
 
 	//Define Mappings
 
-	log.Println("Starting the Gin router..  ,,,......")
+	log.Println("Starting the Gin router..,,,......")
 
 	ic.router.GET("/ping", ic.Ping)
 	ic.router.POST("/create", ic.Create)
